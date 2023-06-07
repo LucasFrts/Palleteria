@@ -10,8 +10,8 @@ export default {
     data(){
         return{
             data:[
-                {mainText:"Faça Seu Cadastro", subText:"Trabalhe com os melhores do mercado de pallets.", button:"Cadastre-se", invert:false, img:"/img/pallet1-png.png", background:"#fff"},
-                {mainText:"Diversos Materiais, Tamanhos e Qualidades!", subText:"98% de recomendação entre usuários", invert:true, img:"/img/pallet2-png.png"}
+                {mainText:"Faça Seu Cadastro", subText:"Trabalhe com os melhores do mercado de pallets.", button:"Cadastre-se", invert:false, img:"img/pallet1-png.png", background:"#fff"},
+                {mainText:"Diversos Materiais, Tamanhos e Qualidades!", subText:"98% de recomendação entre usuários", invert:true, img:"img/pallet2-png.png"}
             ],
         }   
     }
