@@ -15,11 +15,16 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  ssr:false,
+  target:"static",
+  router:{
+    base:'/Palleteria'
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'bootstrap/dist/css/bootstrap.css',
     'bootstrap-icons/font/bootstrap-icons.css',
+    'static/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
