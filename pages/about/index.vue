@@ -8,7 +8,7 @@
 export default {
     data(){
         return{
-            data:{mainText:"Nosso trabalho é dar qualidade ao seu trabalho!", subText:"A 22 anos no mercado, a Palleteria se esforça em trazer os melhores resultados para você.", img:"/img/grupo-pessoas.jpg", invert:true, background:"#fff"},
+            data:{mainText:"Nosso trabalho é dar qualidade ao seu trabalho!", subText:"A 22 anos no mercado, a Palleteria se esforça em trazer os melhores resultados para você.", img:"img/grupo-pessoas.jpg", invert:true, background:"#fff"},
             page:'about'
         }
     }
