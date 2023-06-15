@@ -1,13 +1,13 @@
 <template>
     <footer class="w-100 bg-pallet text-center d-flex justify-content-center align-items-center">
-       Copyright © {{ date  }} Lucas Freitas
+       Copyright © {{ date  }} -  Lucas Freitas
     </footer>
 </template>
 <script>
 export default {
     computed:{
         date(){
-            return (new Date()).toISOString().split('T')[0].replace(/\D/g, '').replace(/(\d{4})(\d{2})(\d{2})/g, "$3/$2/$1")
+            return (new Date()).getFullYear()
         }
     },
 }

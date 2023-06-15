@@ -2,24 +2,13 @@
     <nav class="navbar navbar-expand-lg bg-pallet">
       <div class="container-fluid d-flex justify-content-between">
         <NuxtLink class="navbar-brand text-white" to="/about">Palleteria</NuxtLink>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse flex-grow-0"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <b-navbar-toggle target="nav-collapse">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </b-navbar-toggle>
+        <b-collapse id="nav-collapse" is-nav class="flex-grow-0">
+          <b-navbar-nav class="me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <NuxtLink class="nav-link" :class="{'active' : active == 'home'}" aria-current="page" to="/">Home</NuxtLink>
+                  <NuxtLink class="nav-link" :class="{'active' : active == 'home'}" aria-current="page" to="/">Home</NuxtLink>
             </li>
             <li class="nav-item">
               <NuxtLink class="nav-link" :class="{'active' : active == 'subscribe'}" aria-current="page" to="/subscribe">Cadastrar</NuxtLink>
@@ -30,8 +19,9 @@
             <li class="nav-item">
               <NuxtLink class="nav-link" :class="{'active' : active == 'about'}" aria-current="page" to="/about">Sobre</NuxtLink>
             </li>
-          </ul>
-        </div>
+          </b-navbar-nav>
+        </b-collapse>
+
       </div>
     </nav>
 </template>

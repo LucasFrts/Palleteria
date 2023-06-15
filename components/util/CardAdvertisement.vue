@@ -117,6 +117,8 @@ export default {
     width: 100%;
     font-size: 2.5rem;
     font-weight: bolder;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
   }
   .text-small {
     width: 100%;
@@ -134,6 +136,9 @@ export default {
     width: 100%;
     font-size: 3.1rem;
     font-weight: bolder;
+    line-height: 3.1rem;  
+    padding-bottom: 1.5rem;
+
   }
   .text-small {
     width: 100%;
@@ -151,6 +156,8 @@ export default {
   .text {
     width: 100%;
     font-size: 4.5rem;
+    line-height: 4.5rem;
+    padding-bottom: .5rem;
     font-weight: bolder;
   }
   .text-small {
