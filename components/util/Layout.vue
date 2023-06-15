@@ -1,10 +1,11 @@
 <template>
     <div>
         <Navbar ref="navbar" :active="page"/> 
-        <div ref="receiver" id="main-slot-page" class="w-100 mt-3">
+        <div ref="receiver" id="main-slot-page" class="w-100 mt-5">
             <slot>
             </slot>
         </div>
+        <Footer ref="footer" />
     </div>
 </template>
 <script>
@@ -18,12 +19,13 @@ export default {
         }
     },
     mounted(){
-        console.log(this.$refs)
         const navbarHeight = this.$refs.navbar.$el.clientHeight;
+        const footerHeight = this.$refs.footer.$el.clientHeight;
         const receiver = this.$refs.receiver;
 
         if (receiver instanceof HTMLElement) {
           receiver.style.paddingTop = `${navbarHeight}px`;
+          receiver.style.paddingBottom = `${footerHeight}px`;
         }
     }
 }

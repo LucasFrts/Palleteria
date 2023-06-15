@@ -3,7 +3,7 @@
     <div
       :class="{ 'flex-row-reverse': invert }"
       :style="{ backgroundColor: background }"
-      class="d-flex row justify-content-between"
+      class="d-flex row justify-content-between pt-4"
     >
       <div class="item col-md-6 col-sm-12">
         <div class="container">
@@ -18,7 +18,7 @@
               v-if="button != undefined"
               class="d-flex flex-row justify-content-center spacing"
             >
-              <a href="/Subscribe" class="d-flex btn btn-danger">
+              <a href="/Subscribe" class="d-flex btn btn-danger justify-content-center">
                 {{ button }}
               </a>
             </div>
@@ -91,13 +91,15 @@ export default {
 }
 .spacing {
   margin: 15px;
-  padding: 15px;
+  padding: 15px 0px;
 }
 .text-field{
     padding:1rem;
 }
 .btn {
-  padding: 0.7rem 11rem;
+  width: 80%;
+  height: 3.5rem;
+  align-items: center;
   font-size: large;
   font-weight: bold;
 }
@@ -107,7 +109,7 @@ export default {
 }
 @media (max-width: 600px) {
   .btn {
-    padding: 0.5rem 1.5rem;
+    width: 80%;
     font-size: large;
     font-weight: bolder;
   }
@@ -124,7 +126,7 @@ export default {
 }
 @media (min-width: 601px) {
   .btn {
-    padding: 0.7rem 5rem;
+    width: 80%;
     font-size: large;
     font-weight: bolder;
   }
@@ -141,19 +143,19 @@ export default {
 }
 @media (min-width: 900px) {
   .btn {
-    padding: 0.7rem 5rem;
+    width: 80%;
     font-size: large;
     font-weight: bolder;
   }
 
   .text {
     width: 100%;
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: bolder;
   }
   .text-small {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 800;
   }
   .item {
