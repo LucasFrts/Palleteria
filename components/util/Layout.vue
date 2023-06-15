@@ -27,6 +27,22 @@ export default {
           receiver.style.paddingTop = `${navbarHeight}px`;
           receiver.style.paddingBottom = `${footerHeight}px`;
         }
+
+        const footer = this.$refs.footer;
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        if (scrollHeight > clientHeight) { 
+            footer.$el.classList.remove('footer-fixed');
+        } else {
+            footer.$el.classList.add('footer-fixed');
+        }
+        
     }
 }
 </script>
+<style scoped>
+.footer-fixed{
+    position:fixed !important;
+    bottom: 0 !important;
+}
+</style>
