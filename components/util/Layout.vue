@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar ref="navbar" :active="page"/> 
-        <div ref="receiver" id="main-slot-page" class="w-100 mt-5">
+        <div ref="receiver" id="main-slot-page" class="w-100 mt-3">
             <slot>
             </slot>
         </div>
