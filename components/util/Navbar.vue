@@ -61,6 +61,7 @@ a {
   z-index: 9999;
   width: 100%;
   top:0;
+  transition: .3s ease;
 }
 .navbar-brand {
   padding: 8px !important;

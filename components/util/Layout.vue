@@ -36,6 +36,20 @@ export default {
         } else {
             footer.$el.classList.add('footer-fixed');
         }
+
+        const navbar = this.$refs.navbar;
+        let prevScrollPos = window.pageYOffset;
+        window.onscroll = function() {
+          const currentScrollPos = window.pageYOffset;
+        
+          if (prevScrollPos > currentScrollPos || currentScrollPos === 0) {
+            navbar.$el.style.top = '0';
+          } else {
+            navbar.$el.style.top = `-${navbar.$el.offsetHeight}px`;
+          }
+      
+          prevScrollPos = currentScrollPos;
+        };
         
     }
 }
@@ -44,5 +58,8 @@ export default {
 .footer-fixed{
     position:fixed !important;
     bottom: 0 !important;
+}
+.scrolled{
+    margin-top: -100%;
 }
 </style>
